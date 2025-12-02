@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Nicer Buttons Example</title>
   <style>
     body {
-      background-image: url('Screenshot 2025-12-01 182323.png');
+      background: url('delete1.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(135deg, #0078D7, #005a9e);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
+
+
 <!-- First button -->
 <a href="BERGENTRUCK%20201x.html" download="BERGENTRUCK 201x.html">
   <button>Download BERGENTRUCK 201X</button>
